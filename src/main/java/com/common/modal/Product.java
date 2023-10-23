@@ -1,13 +1,16 @@
 package com.common.modal;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
+
+
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
+@Data
 public class Product {
-    Integer productId;
-    String productName;
+    private Long id;
+    private String name;
+    private Integer price;
 }
